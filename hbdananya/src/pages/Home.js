@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import clown_dance from '../images/clown_dance.gif';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import styles from '../styles.module.css';
-import troll from '../images/TROLL.JPG';
+import troll from '../images/troll.gif';
 import { Link } from 'react-router-dom';
 function Home() {
     const alignCenter = { display: 'flex', alignItems: 'center' };

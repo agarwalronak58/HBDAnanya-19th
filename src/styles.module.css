@@ -23,6 +23,17 @@
     border-radius: 10px;
 }
 
+.pbj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    height: 24rem;
+    width: 24rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
 .parallax {
     margin-right: 15%;
 }

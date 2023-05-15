@@ -1,40 +1,27 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import styles from '../styles.module.css';
 import troll from '../images/troll.gif';
 import pbj from '../images/pbj_time.gif';
 import pbjMusic from '../images/pbj_time.mp3';
 import { Link } from 'react-router-dom';
+
 function Home() {
     const alignCenter = { display: 'flex', alignItems: 'center' };
 
     const [angle, setAngle] = useState(0);
 
+    const [audioPlayed, setAudioPlayed] = useState(false);
+
     const parallaxRef = useRef();
 
-    const [isVisible, setVisible] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const image = document.querySelector("#pbj-time-img");
-            const rect = image.getBoundingClientRect();
-            const viewHeight = Math.max(
-                document.documentElement.clientHeight,
-                window.innerHeight
-            );
-            
-            if (rect.top >= 0 && rect.bottom <= viewHeight) {
-                setVisible(true);
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
-    function handleClick() {
+    const clickImage = () => {
         // console.log(parallaxRef);
+        if (!audioPlayed) {
+            const audio = new Audio(pbjMusic);
+            audio.play();
+            setAudioPlayed(true);
+        }
     }
 
     let gradient = `linear-gradient(${angle}deg, #511660, #064e40)`;
@@ -118,7 +105,7 @@ function Home() {
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    sticky={{ start: 1.5, end: 4 }}
+                    sticky={{ start: 1.5, end: 7 }}
                     style={{
                         ...alignCenter,
                         justifyContent: 'flex-start',
@@ -126,14 +113,9 @@ function Home() {
                 >
                     <div
                         className={`${styles.pbj} ${styles.sticky}`}
-                        onClick={handleClick}
+                        onClick={clickImage}
                     >
-                        <img id="pbj-time-img" src={pbj} alt="pbj_time" />
-                        {isVisible && (
-                            <audio autoPlay>
-                                <source src={pbjMusic} type="audio/mp3" />
-                            </audio>
-                        )}
+                        <img src={pbj} />
                     </div>
                 </ParallaxLayer>
 
@@ -149,11 +131,13 @@ function Home() {
                         className={`${styles.card} ${styles.parallax} ${styles.purple}`}
                     >
                         <p>
-                            As you may have already noticed, there is a dancing
-                            clown at the left side of the page that will follow
-                            you no matter how far you scroll. Do not try to
-                            escape it and scroll too far or else you will have
-                            regrets (no fr).
+                            As you may have already noticed, there is the peanut
+                            butter jelly time guy on the left side of the page. <br></br>
+                            No matter how far you try to scroll away. <br></br>
+                            He will always be there, watching you,
+                            judging you, and reminding you that it is always
+                            peanut butter jelly time. Although, if you try clicking
+                            on him, you may be able to get him to go away...
                         </p>
                     </div>
                 </ParallaxLayer>
@@ -167,16 +151,21 @@ function Home() {
                     }}
                 >
                     <div
-                        className={`${styles.card} ${styles.parallax} ${styles.blue}`}
+                        className={`${styles.card} ${styles.parallax} ${styles.black}`}
                     >
-                        <p>
-                            Hopefully your IQ and self-realization skills are
-                            large enough for you to have realized that this
-                            clown is actually YOU. Yes, YOU. ROHIL AGARWAL. One
-                            day, while I was spying on you, I saw you dancing
-                            like a clown and decided to animate it (jk this is
-                            not my animation but instead a live video
-                            recording).
+                        <p style={{ color: 'white', textAlign:'center' }}>
+                            <span style={{color:'red', fontSize: 30}}>
+                                MUAHAHAHAHAHAHAHAHAHA!
+                            </span><br></br>
+                            You really thought that would work?<br></br>
+                            You really thought that you could just click
+                            on him and he would go away? <br></br>
+                            You really thought that I would be that easy 
+                            to get rid of?<br></br>
+                            <span style={{color:'red', fontSize: 30}}>
+                                You fool!
+                            </span><br></br>
+                            You have no idea what you've gotten yourself into.<br></br>
                         </p>
                     </div>
                 </ParallaxLayer>
@@ -190,14 +179,18 @@ function Home() {
                     }}
                 >
                     <div
-                        className={`${styles.card} ${styles.parallax} ${styles.black}`}
+                        className={`${styles.card} ${styles.parallax} ${styles.blue}`}
                     >
                         <p style={{ color: 'white' }}>
-                            Because your IQ is so low, ik this may have come to
-                            you as a surprise. Therefore, I am giving you a
-                            chance to redeem yourself. You may escape this true
-                            clown version of yourself, but it will cost you...
-                            Keep scrolling to find out.
+                            I knew you would be unable to resist clicking on
+                            him. You poor soul. <br></br>
+                            I know probably didn't even see this
+                            coming. <br></br>
+                            You probably thought this was just a fun little
+                            website that I made for you. <br></br>
+                            Well, out of pity, I will give you a chance to
+                            escape. However, it will cost you... <br></br>
+
                         </p>
                     </div>
                 </ParallaxLayer>
@@ -275,7 +268,7 @@ function Home() {
                     </p>
                     <Link to="/game">
                         <button className="learn-more">
-                            Click here to redeem youreslf.
+                            Click here to redeem yourself.
                         </button>
                     </Link>
                 </ParallaxLayer>

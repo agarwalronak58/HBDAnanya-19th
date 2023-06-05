@@ -127,9 +127,9 @@ export default observer(function LevelTwo() {
                 </h1>
                 <button
                     onClick={() => store.init()}
-                    className="hover:underline bg-purple-400 bg-white text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                    className="hover:underline bg-purple-400 bg-white text-red font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                 >
-                    I am very very sorry and i swear that I will not use "TRACE" again.
+                    I am very very sorry and i solemnly swear that I will not use <span style={{color: '#860111', fontSize: 30}}>"TRACE"</span> again.
                 </button>
             </div>
         </div>

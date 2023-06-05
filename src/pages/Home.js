@@ -60,7 +60,7 @@ function Home() {
             <div style={bgStyle} />
             <Parallax pages={12} ref={parallaxRef}>
                 <ParallaxLayer
-                    offset={0.1}
+                    offset={0.3}
                     speed={0.5}
                     style={{
                         ...alignCenter,
@@ -86,7 +86,7 @@ function Home() {
                         <p> 
                             I know everything about you...<br></br>
                             I know your favorite ice cream is Ben & Jerry's <span style={{color:'indianred', fontSize: 30}}>Phish Food</span>,<br></br>
-                            I know your favorite colors are <span style={{color:'green', fontSize: 30}}>dark green</span> and <span style={{color:'darkorchid', fontSize: 30}}>royal purple</span>,<br></br>
+                            I know your favorite colors are <span style={{color:'green', fontSize: 30}}>forest green</span> and <span style={{color:'darkorchid', fontSize: 30}}>royal purple</span>,<br></br>
                             I know you are a <span style={{color:'mediumvioletred', fontSize: 30}}>shopaholic</span>,<br></br>
                             I know you are obsessed with <span style={{color:'lightblue', fontSize: 30}}>Harry Potter</span>,<br></br>
                             I know you are a <span style={{color:'lightpink', fontSize: 30}}>dog person</span> (i hope),<br></br><br></br><br></br>
@@ -94,7 +94,7 @@ function Home() {
                             I know that you like to eat your own <br></br> <span style={{color:'lightgreen', fontSize: 60}}>BOOGERS</span>.<br></br><br></br>
                             Like bruh, boogers? Really? That is so <span style={{color: '#D4D977', fontSize: 30}}>GROSS</span>.<br></br>
                             I mean, I know you're a <span style={{color: '#D4D977', fontSize: 30}}>weirdo</span>, but that's just <span style={{color: '#D4D977', fontSize: 30}}>nasty</span>.<br></br><br></br>
-                            I'm also realizing now that three was no need for me to emphasize those last few words <br></br>
+                            I'm also realizing now that there was no need for me to emphasize those last few words <br></br>
                             but whatever, I'm too lazy to go back and fix it.<br></br>
                             Well, maybe <span style={{color: '#D4D977', fontSize: 30}}>weirdo</span> should stay emphasized...<br></br>
                         </p>

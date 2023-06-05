@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/hbd-ananya-2023/static/css/main.c894cb67.css",
+    "main.js": "/hbd-ananya-2023/static/js/main.6de6a440.js",
+    "static/media/anyai_shocked.png": "/hbd-ananya-2023/static/media/anyai_shocked.48f72220dc7bddbc9c58.png",
+    "static/media/anyai_racist.png": "/hbd-ananya-2023/static/media/anyai_racist.492ec592116f3cc4bcba.png",
+    "static/media/pbj_time.gif": "/hbd-ananya-2023/static/media/pbj_time.e6c0856f80e9d3bb1061.gif",
+    "static/media/troll_song.mp3": "/hbd-ananya-2023/static/media/troll_song.37c206c244791cfa631b.mp3",
+    "static/media/pbj_time.mp3": "/hbd-ananya-2023/static/media/pbj_time.371fe437403415889bd6.mp3",
+    "static/media/anyai_shlumped.png": "/hbd-ananya-2023/static/media/anyai_shlumped.8f12d274b6a01929bcb1.png",
+    "static/media/cilantro.gif": "/hbd-ananya-2023/static/media/cilantro.124289316e751322f616.gif",
+    "static/media/troll.gif": "/hbd-ananya-2023/static/media/troll.507dd321ff38cb0902c7.gif",
+    "static/media/ananyawasted.gif": "/hbd-ananya-2023/static/media/ananyawasted.fcdadb84e6d12461b3a9.gif",
+    "static/media/arthurfist.gif": "/hbd-ananya-2023/static/media/arthurfist.57ee28f1c358d37829e9.gif",
+    "static/media/clown_dance.gif": "/hbd-ananya-2023/static/media/clown_dance.c5f11d9a9634e398c97c.gif",
+    "index.html": "/hbd-ananya-2023/index.html",
+    "main.c894cb67.css.map": "/hbd-ananya-2023/static/css/main.c894cb67.css.map",
+    "main.6de6a440.js.map": "/hbd-ananya-2023/static/js/main.6de6a440.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c894cb67.css",
+    "static/js/main.6de6a440.js"
+  ]
+}

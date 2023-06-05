@@ -1,0 +1,15 @@
+.loser {
+    cursor: url('../images/anyai_racist_50.jpg'), auto;
+}
+
+.loser2 {
+    cursor: url('../images/anyai_shocked_50.jpg'), auto;
+}
+
+.winner {
+    cursor: url('../images/anyai_shlumped_50.jpg'), auto;
+}
+
+.bg-orange-4000 {
+    background-image: url(../images/clown_dance.gif);
+}

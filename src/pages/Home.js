@@ -60,7 +60,7 @@ function Home() {
             <div style={bgStyle} />
             <Parallax pages={12} ref={parallaxRef}>
                 <ParallaxLayer
-                    offset={0.2}
+                    offset={0.1}
                     speed={0.5}
                     style={{
                         ...alignCenter,
@@ -69,7 +69,7 @@ function Home() {
                     }}
                 >
                     <br></br>
-                    <h2 style={textColor}>Hello Ananya "Anyai" Singh.</h2>
+                    <h2 style={{fontSize: 100, color: 'pink'}}>Hello Ananya "Anyai" Singh.</h2>
                     <p className={styles.scrollText} style={textColor}>
                         <p>
                             I know you're probably wondering why I'm calling you
@@ -105,7 +105,7 @@ function Home() {
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    sticky={{ start: 1.5, end: 7 }}
+                    sticky={{ start: 1.5, end: 6 }}
                     style={{
                         ...alignCenter,
                         justifyContent: 'flex-start',
@@ -130,7 +130,7 @@ function Home() {
                     <div
                         className={`${styles.card} ${styles.parallax} ${styles.purple}`}
                     >
-                        <p>
+                        <p style={{ color: 'white' }}>
                             As you may have already noticed, there is the peanut
                             butter jelly time guy on the left side of the page. <br></br>
                             No matter how far you try to scroll away. <br></br>
@@ -200,25 +200,49 @@ function Home() {
                     speed={1.5}
                     style={{ 
                         ...alignCenter, 
+                        justifyContent: 'flex-end' 
+                    }}
+                >
+                    <div
+                        className={`${styles.card} ${styles.parallax} ${styles.purple}`}
+                    >
+                        <p style={{ color: 'white' }}>
+                            All you have to do is keep scrolling, and I will
+                            let you go. <br></br>
+                            But if you scroll too far, you will be
+                            trapped here forever. <br></br>
+                            So, what will it be? <br></br>
+                            Will you keep scrolling? <br></br>
+                            Or will you give up and accept your  
+                            <span style={{color:'pink', fontSize: 30}}> FATE?</span><br></br>
+                        </p>
+                    </div>
+                </ParallaxLayer>
+
+                <ParallaxLayer
+                    offset={7}
+                    speed={1.5}
+                    style={{ 
+                        ...alignCenter, 
                         justifyContent: 'center' 
                     }}
                 >
                     <p style={{ color: 'white' }}>
-                        I see. So you're ready, hm?
+                        You really want to risk it, hmm?
                     </p>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={6}
+                    offset={8}
                     speed={0.5}
                     style={{ 
                         ...alignCenter, 
                         justifyContent: 'center' 
                     }}
                 >
-                    <h1 styles={{ color: 'white' }}>Well then...</h1>
+                    <h1 styles={{ color: 'white' }}>Ok then...</h1>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={8}
+                    offset={9}
                     speed={0.5}
                     style={{
                         backgroundImage: `url(${troll})`,
@@ -242,7 +266,7 @@ function Home() {
                         className={`${styles.scrollText}`}
                         style={{ color: 'white' }}
                     >
-                        TROLLEDDD!!!!
+                        TROLOLOLOLOLOLOLOLOL!!!!
                     </h1>
                 </ParallaxLayer>
                 <ParallaxLayer
@@ -261,13 +285,15 @@ function Home() {
                             padding: '300px',
                         }}
                     >
-                        I warned you not to scroll too far, man. But what did
-                        you do? Ya done scrolled too far, ya bum, and now you're
-                        sitting here embarrassed with everyone around you
-                        judging you in their heads. Too bad, so sad.
+                        I warned you not to scroll too far down. But what did
+                        you do? You CHOSE not to listen, and now you got trolled. <br></br>
+                        I hope you're happy with yourself. <br></br>
+                        I hope you're happy with the choices you've made. <br></br>
+                        I hope you're happy with the life you've chosen to live because I wouldn't be. <br></br>
+                        Just click the button smh.
                     </p>
                     <Link to="/game">
-                        <button className="learn-more">
+                        <button className="learn-more" color="#841584">
                             Click here to redeem yourself.
                         </button>
                     </Link>
